@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>MoneyMamas• Modules</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- NAV -->
+  <nav class="bg-white shadow sticky top-0 z-20">
+    <div class="max-w-4xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="index.html" class="text-xl font-bold text-pink-600">MoneyMamas</a>
+      <button id="navToggle" class="md:hidden" aria-label="Toggle menu">☰</button>
+      <ul id="navList" class="hidden md:flex space-x-6">
+        <li><a href="index.html"      class="hover:text-pink-600 font-semibold">Home</a></li>
+               <li><a href="register.html"   class="hover:text-pink-600 font-semibold">Register</a></li>
+        <li><a href="consulting.html" class=" hover: text-pink-600 font-semibold">Consulting</a></li>
+        <li><a href="modules.html"    class="hover:text-pink-600 font-semibold">Modules</a></li>
+        <li><a href="ContactUs.html" class="hover: text-pink-600 font-semibold">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    document.getElementById('navToggle')
+      .addEventListener('click', () =>
+        document.getElementById('navList').classList.toggle('hidden')
+      );
+  </script>
+
+  <!-- MODULES SECTIONS -->
+  <main class="space-y-24 py-16">
+ <div>
+      <h1 class="text-5xl font-bold text-pink-900 text-center">Get a head start in your money blueprint!</h1>
+      </div> 
+    <!-- Module 1 -->
+    <section id="module-1" class="bg-white">
+    
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+       <!-- image left -->
+        <div class="md:w-1/2 flex-shrink-0">
+          <img src="Mindset.png" alt="Mindset" class="rounded-xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <h2 class="text-3xl font-bold text-pink-800">Module 1: Money Mindset &amp; Goal-Setting</h2>
+          <p class="mt-4 italic">“If you don’t question your money story, you’ll repeat it forever.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Unpacking Limiting Beliefs</h3>
+            <ul>
+              <li><strong>Scarcity vs. Abundance:</strong> Ask yourself: “Do I really believe there’s never enough?”<br>
+                  <em>Exercise:</em> List three times you told yourself “I can’t afford it.” Then reframe each: “I choose to…”</li>
+              <li><strong>Family Money Narratives:</strong> Map out your earliest money memories. Who said “money doesn’t grow on trees”?<br>
+                  <em>Poetic prompt:</em> Write a one-sentence “family money mantra” you’re ready to retire.</li>
+            </ul>
+            <h3>Crafting Family-Focused Visions</h3>
+            <ul>
+              <li><strong>Vision Boarding:</strong> Old-school magazine cutouts vs. digital Pinterest boards—pick your style.</li>
+              <li><strong>SMART Goals, Mama Style:</strong> “Save $300 by end of month” beats vague “I want more savings.”</li>
+              <li><strong>Mini-challenge:</strong> Draft a 6-word mission statement for your household’s money vibe.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 2 -->
+    <section id="module-2" class="bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <!-- text left -->
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-pink-800">Module 2: Budgeting Basics (Then &amp; Now)</h2>
+          <p class="mt-4 italic">“Budgets aren’t prison sentences—think of them as love letters to your future self.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Envelope System vs. Modern Apps</h3>
+            <ul>
+              <li><strong>Envelope:</strong> tactile, visceral—feel that paper cash.</li>
+              <li><strong>Apps (Tala, Moya Wallet):</strong> auto-sync, notifications, cute charts.</li>
+              <li><strong>Debate:</strong> Which feels more empowering for you?</li>
+            </ul>
+            <h3>Zero-Based Budget Walkthrough</h3>
+            <ul>
+              <li>Every pula has a job: groceries, school fees, “fun fund.”</li>
+              <li>Live demo: Build a zero-based budget in a spreadsheet (or app) with sample numbers.</li>
+            </ul>
+            <h3>Hands-On Exercise</h3>
+            <ul>
+              <li>Allocate last month’s income line-by-line. Where did you overspend? What surprised you?</li>
+            </ul>
+          </div>
+        </div>
+        <!-- image right -->
+        <div class="md:w-1/2 mt-8 md:mt-0 flex-shrink-0">
+          <img src="Budgeting.png" alt="Budgeting" class="rounded-xl shadow-lg w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 3 -->
+    <section id="module-3" class="bg-white">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2 flex-shrink-0">
+          <img src="ExpenseTracking.png" alt="Expense Tracking" class="rounded-xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <h2 class="text-3xl font-bold text-pink-800">Module 3: Expense Tracking &amp; Analysis</h2>
+          <p class="mt-4 italic">“You can’t fix a leak if you don’t know where the drip is.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Manual Ledgers vs. Auto-Synced Feeds</h3>
+            <ul>
+              <li><strong>Pen-and-paper:</strong> heightened awareness, no tech headaches.</li>
+              <li><strong>Feeds (MTN Excelerator, SCB app):</strong> real-time balance, trend graphs.</li>
+            </ul>
+            <h3>Identifying “Leak Points”</h3>
+            <ul>
+              <li>Drill-down: Netflix subs you forgot, random airtime top-ups, “just one more” deliveries.</li>
+              <li>Group brainstorm: Share your sneakiest leak and how you’d seal it.</li>
+            </ul>
+            <h3>Data Deep-Dive</h3>
+            <ul>
+              <li>Quick pivot-table demo: Categorize last 10 transactions; spot the biggest category.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 4 -->
+    <section id="module-4" class="bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-pink-800">Module 4: Building an Emergency Fund</h2>
+          <p class="mt-4 italic">“Future-proofing isn’t optional—it’s survival.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Three-to-Six Months Rule</h3>
+            <ul>
+              <li>Traditional logic: living expenses × 3–6.</li>
+              <li>Skeptic’s corner: Is that realistic on a hectic single-mom income?</li>
+            </ul>
+            <h3>Micro-Savings Hacks</h3>
+            <ul>
+              <li>Round-up apps: spare change on every swipe.</li>
+              <li>“No-coffee” challenge: skip one fancy latté per week; stash $15.</li>
+            </ul>
+            <h3>Action Plan</h3>
+            <ul>
+              <li>Set a small first milestone (e.g., $500); celebrate on Slack/WhatsApp group.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 flex-shrink-0">
+          <img src="Emergency.png" alt="Emergency Fund" class="rounded-xl shadow-lg w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 5 -->
+    <section id="module-5" class="bg-white">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2 flex-shrink-0">
+          <img src="debt.png" alt="Debt Management" class="rounded-xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <h2 class="text-3xl font-bold text-pink-800">Module 5: Debt Management &amp; Repair</h2>
+          <p class="mt-4 italic">“Debt is a tool—wield it, don’t be wielded by it.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Snowball vs. Avalanche</h3>
+            <ul>
+              <li><strong>Snowball:</strong> small debts first = instant wins.</li>
+              <li><strong>Avalanche:</strong> highest-rate first = math-optimal.</li>
+              <li>Exercise: Calculate which saves you the most in interest.</li>
+            </ul>
+            <h3>Negotiating &amp; Consolidations</h3>
+            <ul>
+              <li>Script: “Can you lower my rate by X%? I’m a loyal customer.”</li>
+              <li>Pros/cons of consolidation loans in your particular country: watch the fine print.</li>
+            </ul>
+            <h3>Credit Repair Tips</h3>
+            <ul>
+              <li>Dispute one small error on your report each month—to keep momentum.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 6 -->
+    <section id="module-6" class="bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-pink-800">Module 6: Credit Score Mastery</h2>
+          <p class="mt-4 italic">“Your score is a mirror—time to polish.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Reading Your Report</h3>
+            <ul>
+              <li>Inquiries, payment history, public records.</li>
+              <li>Warning flags: unknown inquiries, late payments older than 2 years.</li>
+            </ul>
+            <h3>Time-Tested Habits</h3>
+            <ul>
+              <li>Pay on or before due date—set calendar alerts.</li>
+              <li>Keep credit-utilization under 30%.</li>
+            </ul>
+            <h3>Myth-Busting</h3>
+            <ul>
+              <li>Closing an old card can hurt more than help.</li>
+              <li>Mini-quiz: True or false?</li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 flex-shrink-0">
+          <img src="creditscore.png" alt="Credit Score" class="rounded-xl shadow-lg w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 7 -->
+    <section id="module-7" class="bg-white">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2 flex-shrink-0">
+          <img src="investingfundamentals.png" alt="Investing Fundamentals" class="rounded-xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <h2 class="text-3xl font-bold text-pink-800">Module 7: Savings &amp; Investing Fundamentals</h2>
+          <p class="mt-4 italic">“Let your money gossip: ‘Guess what I did last night?’”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Savings vs. Bonds vs. Stocks</h3>
+            <ul>
+              <li>Savings account: ultra-safe, low yield.</li>
+              <li>Government bonds: moderate yield, moderate lock-in.</li>
+              <li>Stocks (local brokers/apps): high-risk/high-reward.</li>
+            </ul>
+            <h3>Compound Interest</h3>
+            <ul>
+              <li>“Magic multiplier” demo: P250 → growth over 10 years at 5% annually.</li>
+            </ul>
+            <h3>Portfolio Primer</h3>
+            <ul>
+              <li>Simple 60/40 split: 60% low-risk, 40% growth.</li>
+              <li>Micro-investing platforms: start with P100.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 8 -->
+    <section id="module-8" class="bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-pink-800">Module 8: Retirement &amp; Future-Proofing</h2>
+          <p class="mt-4 italic">“Retirement isn’t a someday dream—it’s a daily drip.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Pension Basics</h3>
+            <ul>
+              <li>BPOPF vs. private schemes: vesting periods, employer match, portability.</li>
+            </ul>
+            <h3>Starting Small</h3>
+            <ul>
+              <li>$500–$1000 monthly via unit trusts or annuities.</li>
+              <li>“Set-and-forget” standing orders.</li>
+            </ul>
+            <h3>Visualization Exercise</h3>
+            <ul>
+              <li>Imagine yourself at 65—what do you want your nest egg to cover? Write it down.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 flex-shrink-0">
+          <img src="Retirement.png" alt="Retirement" class="rounded-xl shadow-lg w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 9 -->
+    <section id="module-9" class="bg-white">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2 flex-shrink-0">
+          <img src="Side Hustle.png" alt="Side Hustles" class="rounded-xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <h2 class="text-3xl font-bold text-pink-800">Module 9: Side Hustles for Moms</h2>
+          <p class="mt-4 italic">“Hustle smart, not hustle hard.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Idea Generation</h3>
+            <ul>
+              <li>Craft sales, digital freelancing, tutoring.</li>
+              <li>Market test: pre-sell one prototype/service to a friend.</li>
+            </ul>
+            <h3>Time/Energy/Profit Matrix</h3>
+            <ul>
+              <li>Chart potential hustles by setup time vs. ongoing energy.</li>
+            </ul>
+            <h3>Mini-Plan</h3>
+            <ul>
+              <li>Draft a one-week action plan: Day 1—outline service; Day 2—price it.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 10 -->
+    <section id="module-10" class="bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-pink-800">Module 10: Insurance &amp; Protection</h2>
+          <p class="mt-4 italic">“Peace of mind is the ultimate luxury.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Life &amp; Health Insurance 101</h3>
+            <ul>
+              <li>Term life vs. endowment. Hospital plans: network vs. out-of-pocket.</li>
+            </ul>
+            <h3>Micro-Insurance</h3>
+            <ul>
+              <li>Airtime-based premiums for low-income households: pros/cons.</li>
+            </ul>
+            <h3>Family Safeguards</h3>
+            <ul>
+              <li>Check your nominee updates—when was yours last reviewed?</li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 flex-shrink-0">
+          <img src="insurance.png" alt="Insurance" class="rounded-xl shadow-lg w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 11 -->
+    <section id="module-11" class="bg-white">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2 flex-shrink-0">
+          <img src="digitalsecurity.png" alt="Digital Security" class="rounded-xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <h2 class="text-3xl font-bold text-pink-800">Module 11: Digital Tools &amp; Security</h2>
+          <p class="mt-4 italic">“Hackers never nap; neither should your defenses.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Password Hygiene</h3>
+            <ul>
+              <li>Passphrases: four random words > “P@ssw0rd1!” Use a manager (Bitwarden, KeePass).</li>
+            </ul>
+            <h3>Two-Factor Auth (2FA)</h3>
+            <ul>
+              <li>Authenticator apps vs. SMS. Set up on banking &amp; email today.</li>
+            </ul>
+            <h3>Top-5 Money Apps</h3>
+            <ul>
+              <li>Budgeting: YNAB vs. Goodbudget. Investing: EasyEquities, GC Funds.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 12 -->
+    <section id="module-12" class="bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-pink-800">Module 12: Teaching Money to Kids</h2>
+          <p class="mt-4 italic">“Plant a seed of financial wisdom; watch them bloom.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Storytelling &amp; Allowances</h3>
+            <ul>
+              <li>“Spend, save, share” jars. Picture-book narratives about choices.</li>
+            </ul>
+            <h3>Chore-Based Rewards</h3>
+            <ul>
+              <li>Assign value to chores; track on a chore chart.</li>
+            </ul>
+            <h3>Age-Appropriate Lessons</h3>
+            <ul>
+              <li>4–6 yrs: coin-sorting games. 7–10 yrs: basic ledgers. 11+ yrs: budget their “fun fund.”</li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 flex-shrink-0">
+          <img src="kidsmoney.png" alt="Kids and Money" class="rounded-xl shadow-lg w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 13 -->
+    <section id="module-13" class="bg-white">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2 flex-shrink-0">
+          <img src="negotiation.png" alt="Negotiation" class="rounded-xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <h2 class="text-3xl font-bold text-pink-800">Module 13: Negotiation &amp; Earning Power</h2>
+          <p class="mt-4 italic">“If you don’t ask, the answer’s always no.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Raise-Scripts that Work</h3>
+            <ul>
+              <li>“I’ve driven X outcomes; based on market data, a Y adjustment feels fair.”</li>
+            </ul>
+            <h3>Reframing Money Talks</h3>
+            <ul>
+              <li>Role-play partner conversations: “Let’s align on our shared goals.”</li>
+            </ul>
+            <h3>Confidence-Boosters</h3>
+            <ul>
+              <li>Power-pose before the ask; journal three wins.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 14 -->
+    <section id="module-14" class="bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-pink-800">Module 14: Legacy &amp; Estate Basics</h2>
+          <p class="mt-4 italic">“Your story deserves a proper closing chapter.”</p>
+          <div class="mt-4 space-y-4 prose">
+            <h3>Wills &amp; Beneficiaries</h3>
+            <ul>
+              <li>DIY will kits vs. legal counsel. Update nominees on policies/accounts.</li>
+            </ul>
+            <h3>Passing on Wealth</h3>
+            <ul>
+              <li>Customs (lobola, trusts) vs. statutory frameworks. Plan “estate talk” this month.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 flex-shrink-0">
+          <img src="estateplan.png" alt="Estate Planning" class="rounded-xl shadow-lg w-full">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+    <!-- Footer -->
+  <footer class="bg-gray-200 text-gray-700 py-8">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-2 text-sm">
+      <p>© 2025 Mom & Me Workshop. All rights reserved.</p>
+      <div class="space-x-4">
+        <a href="privacy.html" class="hover:underline">Privacy Policy</a>|
+        <a href="terms.html"  class="hover:underline">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
+
+

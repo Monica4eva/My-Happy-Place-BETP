@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MoneyMamas • Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- NAVIGATION -->
+  <nav class="bg-white shadow sticky top-0 z-30">
+    <div class="max-w-5xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="index.html" class="text-2xl font-bold text-pink-600">MoneyMamas</a>
+      <button id="navToggle" class="md:hidden text-2xl" aria-label="Toggle menu">☰</button>
+      <ul id="navList" class="hidden md:flex space-x-8">
+        <li><a href="index.html" class="hover:text-pink-600">Home</a></li>
+               <li><a href="register.html"   class="hover:text-pink-600 font-semibold">Register</a></li>
+        <li><a href="modules.html" class="hover:text-pink-600">Modules</a></li>
+        <li><a href="consulting.html" class="hover:text-pink-600">Consulting</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+  <script>
+    document.getElementById('navToggle')
+      .addEventListener('click', () =>
+        document.getElementById('navList').classList.toggle('hidden')
+      );
+  </script>
+
+  <!-- CONTACT HERO -->
+  <section class="py-16 bg-pink-100 text-center">
+    <h1 class="text-4xl font-bold text-pink-700">Get in Touch</h1>
+    <p class="mt-4 text-gray-700 max-w-2xl mx-auto">
+      Questions? Suggestions? We’re here for you, Mama. Send us a message below — we’ll get right back to you!
+    </p>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section id="contact" class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Send Us a Message</h2>
+        <form>
+          <div class="space-y-4">
+            <label class="block">
+              <span class="font-medium">Your Name</span>
+              <input type="text" required placeholder="e.g. Keitumetse N."
+                class="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500 p-3"/>
+            </label>
+            <label class="block">
+              <span class="font-medium">Email Address</span>
+              <input type="email" required placeholder="you@domain.com"
+                class="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500 p-3"/>
+            </label>
+            <label class="block">
+              <span class="font-medium">Message</span>
+              <textarea rows="4" required placeholder="How can we help you?"
+                class="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500 p-3"></textarea>
+            </label>
+          </div>
+          <button type="submit"
+            class="mt-6 w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-pink-700 transition">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-200 text-gray-700 py-8">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-2 text-sm">
+      <p>© 2025 MoneyMamas Workshop. All rights reserved.</p>
+      <div class="space-x-4">
+        <a href="privacy.html" class="hover:underline">Privacy Policy</a>|
+        <a href="terms.html" class="hover:underline">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

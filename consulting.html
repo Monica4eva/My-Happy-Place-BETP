@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MoneyMamas • Consulting & Coaching</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- NAVIGATION -->
+  <nav class="bg-white shadow sticky top-0 z-30">
+    <div class="max-w-5xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="index.html" class="text-2xl font-bold text-pink-600">MoneyMamas</a>
+      <button id="navToggle" aria-label="Toggle menu" class="md:hidden text-2xl">☰</button>
+      <ul id="navList" class="hidden md:flex space-x-8">
+        <li><a href="index.html" class="hover:text-blue-600 font-semibold">Home</a></li>
+        <li><a href="register.html"   class="hover:text-pink-600 font-semibold">Register</a></li>
+        <li><a href="modules.html" class="hover:text-pink-600 font-semibold">Modules</a></li>
+        <li><a href="ContactUs.html" class="hover: text-pink-600 font-semibold">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    // MOBILE NAV TOGGLE
+    document.getElementById('navToggle')
+      .addEventListener('click', () =>
+        document.getElementById('navList').classList.toggle('hidden')
+      );
+  </script>
+
+  <!-- HERO -->
+  <section class="relative bg-cover bg-center h-screen" style="background-image:url('consultingpic.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 flex flex-col items-start justify-center h-full text-white px-6 md:px-12 max-w-4xl">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+        Empower. Invest. Thrive.
+      </h1>
+      <p class="text-lg md:text-2xl mb-6">
+        Personalized consulting for young mothers: build your nest egg, launch that side hustle, join community crowdfunding—and get our free “Savvy-Mama Savings” e-Book today.
+      </p>
+      <a href="#services" class="bg-pink-500 hover:bg-pink-600 transition text-white font-semibold px-6 py-3 rounded-full shadow-lg">
+        Explore Services
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section id="services" class="py-16 bg-gray-100">
+    <div class="max-w-5xl mx-auto px-6 space-y-12">
+      <h2 class="text-3xl font-bold text-center">Our Consulting & Coaching</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- SERVICE CARD -->
+        <div class="bg-gray-800 text-white p-6 rounded-xl border-2 border-white hover:shadow-2xl transition">
+          <div class="mb-4 text-pink-400">
+            <!-- Replace with your icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11 17a4 4 0 100-8 4 4 0 000 8zM21 21l-6-6" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-center">Investment Coaching</h3>
+          <p class="text-sm mb-4 text-center">
+            Learn how to grow your savings into a portfolio that works for you—stocks, bonds, micro-investing apps and more.
+          </p>
+          <div class="text-center">
+            <a href="#ebook" class="inline-block bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-full font-medium transition">
+              Download Free e-Book
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 text-white p-6 rounded-xl border-2 border-white hover:shadow-2xl transition">
+          <div class="mb-4 text-pink-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 10h18M3 6h18M3 14h18M3 18h18" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-center">Business Finance Coaching</h3>
+          <p class="text-sm mb-4 text-center">
+            From budgeting basics to profit-boosting strategies—get a one-on-one roadmap for your mom-run microbusiness.
+          </p>
+          <div class="text-center">
+            <a href="register.html" class="inline-block bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-full font-medium transition">
+              Book a Session
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 text-white p-6 rounded-xl border-2 border-white hover:shadow-2xl transition">
+          <div class="mb-4 text-pink-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8c-1.105 0-2 .895-2 2v4m4-4c0-1.105-.895-2-2-2m0 0C9.79 6 8 7.79 8 10v4c0 2.21 1.79 4 4 4s4-1.79 4-4v-4c0-2.21-1.79-4-4-4z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-center">Group Crowdfunding</h3>
+          <p class="text-sm mb-4 text-center">
+            Join our circle of mama-preneurs pooling small amounts to fund each other’s ventures—no banks required.
+          </p>
+          <div class="text-center">
+            <a href="#join" class="inline-block bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-full font-medium transition">
+              Join the Circle
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIAL BANNER / CTA -->
+  <section id="ebook" class="py-16">
+    <div class="max-w-4xl mx-auto px-6 bg-white rounded-xl shadow-lg text-center py-12">
+      <h2 class="text-2xl font-bold mb-4">FREE “Savvy-Mama Savings” e-Book</h2>
+      <p class="mb-6 text-gray-700">
+        10 proven hacks to supercharge your emergency fund—even if you’re on a shoestring budget. Delivered instantly to your inbox.
+      </p>
+      <a href="ebook.pdf" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-semibold transition">
+        Get My e-Book
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+    <!-- Footer -->
+  <footer class="bg-gray-200 text-gray-700 py-8">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-2 text-sm">
+      <p>© 2025 Mom & Me Workshop. All rights reserved.</p>
+      <div class="space-x-4">
+        <a href="privacy.html" class="hover:underline">Privacy Policy</a>|
+        <a href="terms.html"  class="hover:underline">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

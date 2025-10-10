@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>MoneyMamas • Countdown & Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* TYPEWRITER */
+    .typewriter {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: .15em solid currentColor;
+      animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+    }
+    @keyframes typing { from { width: 0 } to { width: 100% } }
+    @keyframes blink-caret { 50% { border-color: transparent } }
+
+    /* DROP-IN */
+    @keyframes dropIn {
+      from { transform: translateY(-50px); opacity: 0 }
+      to   { transform: translateY(0);     opacity: 1 }
+    }
+    .drop-in {
+      animation: dropIn .6s ease-out forwards;
+    }
+
+    /* SHAKE */
+    @keyframes shake {
+      0%,100% { transform: translateX(0) }
+      20%,60% { transform: translateX(-10px) }
+      40%,80% { transform: translateX(10px) }
+    }
+    .shake {
+      animation: shake .5s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- NAV -->
+  <nav class="bg-white shadow sticky top-0 z-20">
+    <div class="max-w-4xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="index.html" class="text-xl font-bold text-pink-600">MoneyMamas</a>
+      <button id="navToggle" class="md:hidden" aria-label="Toggle menu">☰</button>
+      <ul id="navList" class="hidden md:flex space-x-6">
+        <li><a href="index.html"     class="hover:text-pink-600 font-semibold">Home</a></li>
+         <li><a href="countdown.html"   class="hover:text-pink-600 font-semibold">Countdown</a></li>
+        <li><a href="consulting.html" class="hover: text-pink-600 font-semibold">Consulting</a></li>
+        <li><a href="modules.html"   class="hover:text-pink-600 font-semibold">Modules</a></li>
+        <li><a href="ContactUs.html" class="hover: text-pink-600 font-semibold">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- COUNTDOWN -->
+  <section id="countdown" class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-pink-800 mb-4 typewriter">
+        ⏳ Time’s Ticking, Mama!
+      </h2>
+      <p class="italic text-gray-600 mb-8">
+        “Seriously—what’s stopping you? Workshop kicks off in…”
+      </p>
+
+      <div id="timer" class="grid grid-cols-4 gap-4 text-4xl font-mono text-gray-800 mb-8">
+        <div><span id="days">0</span><div class="text-sm uppercase text-gray-500">Days</div></div>
+        <div><span id="hours">0</span><div class="text-sm uppercase text-gray-500">Hours</div></div>
+        <div><span id="minutes">0</span><div class="text-sm uppercase text-gray-500">Minutes</div></div>
+        <div><span id="seconds">0</span><div class="text-sm uppercase text-gray-500">Seconds</div></div>
+      </div>
+
+      <div class="space-x-4">
+        <a href="modules.html"
+           class="inline-block bg-white text-pink-900 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
+          View Modules
+        </a>
+        <button id="lockInButton"
+           class="inline-block bg-yellow-400 text-pink-900 font-semibold px-6 py-3 rounded-full shadow hover:bg-yellow-300 transition">
+          Lock In Your Spot
+        </button>
+      </div>
+    </div>
+  </section>
+
+   <section id="module-7" class="bg-white">
+      <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2 flex-shrink-0">
+          <img src="Registration.png" alt="Investing Fundamentals" class="rounded-xl shadow-lg w-full">
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <h2 class="text-3xl font-bold text-pink-800"> You don't want to miss out on this!</h2>
+          <p class="mt-4 italic"> Say “yes” and transform stress into confidence, uncertainty into clear action, and build a future where you’re not just surviving paycheck to paycheck, but thriving on your own terms. Lock in your space, and register below.</p>
+          <div class="mt-4 space-y-4 prose">
+      </div>
+    </section>
+
+  <!-- REGISTER (hidden until button click) -->
+  <section id="register" class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-6">
+      <div id="formWrapper" class="bg-white p-8 rounded-xl shadow-lg opacity-0">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Lock In Your Seat</h2>
+        <form>
+          <div class="space-y-4">
+            <label class="block">
+              <span class="font-medium">Full Name</span>
+              <input type="text" required placeholder="e.g. Keitumetse N."
+                class="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3"/>
+            </label>
+            <label class="block">
+              <span class="font-medium">Email Address</span>
+              <input type="email" required placeholder="you@domain.com"
+                class="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3"/>
+            </label>
+            <label class="block">
+              <span class="font-medium">Phone Number (optional)</span>
+              <input type="tel" placeholder="+267 7XX XXX XXX"
+                class="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3"/>
+            </label>
+            <label class="block">
+              <span class="font-medium">Kids’ Ages (optional)</span>
+              <input type="text" placeholder="e.g. 4, 7, 12"
+                class="mt-1 w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-pink-500 p-3"/>
+            </label>
+          </div>
+          <button type="submit"
+            class="mt-6 w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-pink-700 transition">
+            Count Me In
+          </button>
+          <p class="mt-4 text-sm text-gray-500">
+            We guard your data like grandma’s secret cookie recipe. Never shared, never sold.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+    <!-- Footer -->
+  <footer class="bg-gray-200 text-gray-700 py-8">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-2 text-sm">
+      <p>© 2025 Mom & Me Workshop. All rights reserved.</p>
+      <div class="space-x-4">
+        <a href="privacy.html" class="hover:underline">Privacy Policy</a>|
+        <a href="terms.html"  class="hover:underline">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    // NAV TOGGLE
+    document.getElementById('navToggle').addEventListener('click', () =>
+      document.getElementById('navList').classList.toggle('hidden')
+    );
+
+    // COUNTDOWN
+    const target = new Date('July 10, 2025 19:00:00').getTime();
+    function updateTimer() {
+      const now  = Date.now();
+      const diff = target - now;
+      if (diff < 0) return;
+      document.getElementById('days').textContent    = Math.floor(diff / 86400000);
+      document.getElementById('hours').textContent   = Math.floor((diff % 86400000) / 3600000);
+      document.getElementById('minutes').textContent = Math.floor((diff % 3600000) / 60000);
+      document.getElementById('seconds').textContent = Math.floor((diff % 60000) / 1000);
+    }
+    updateTimer();
+    setInterval(updateTimer, 1000);
+
+    // REVEAL & ANIMATE FORM ON BUTTON CLICK
+    document.getElementById('lockInButton').addEventListener('click', () => {
+      // scroll to form
+      document.getElementById('register').scrollIntoView({ behavior: 'smooth' });
+      // reveal + animate
+      const wrapper = document.getElementById('formWrapper');
+      wrapper.classList.remove('opacity-0');
+      wrapper.classList.add('drop-in');
+      setTimeout(() => wrapper.classList.add('shake'), 600);
+    });
+  </script>
+</body>
+</html>

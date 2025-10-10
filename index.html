@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>My Happy Place | Building Botswana’s Future</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- NAVIGATION -->
+  <nav class="bg-white shadow sticky top-0 z-30">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">My Happy Place</a>
+      <button id="navToggle" aria-label="Toggle menu" class="md:hidden text-2xl">☰</button>
+      <ul id="navList" class="hidden md:flex space-x-8">
+        <li><a href="index.html" class="hover:text-blue-600 font-semibold">Home</a></li>
+        <li><a href="#how" class="hover:text-blue-600 font-semibold">How It Works</a></li>
+        <li><a href="#projects" class="hover:text-blue-600 font-semibold">Projects</a></li>
+        <li><a href="#stories" class="hover:text-blue-600 font-semibold">Success Stories</a></li>
+        <li><a href="#contact" class="hover:text-blue-600 font-semibold">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    document.getElementById('navToggle')
+      .addEventListener('click', () =>
+        document.getElementById('navList').classList.toggle('hidden')
+      );
+  </script>
+
+  <!-- HERO -->
+  <section class="relative bg-cover bg-center h-screen" style="background-image:url('My\ Happy\ Place\(1\).jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 flex flex-col items-start justify-center h-full text-white px-6 md:px-12 max-w-4xl space-y-6">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Welcome to My Happy Place: Together, We Build Botswana’s Future
+      </h1>
+      <p class="text-lg md:text-xl">
+        <strong>My Happy Place (MHP)</strong> is Botswana’s independent social enterprise flagship platform enabling citizens to actively participate in Botswana’s Economic Transformation, inspired by the <strong>Botswana Entrepreneurial Transformation Program (BETP)</strong>. Through MHP, citizens aspiring to attain BETP flagship project status can connect with vibrant local projects, contribute ideas and effort, earn rewards, and watch their contributions transform our nation’s economy and communities.
+      </p>
+      <div class="flex flex-wrap gap-4">
+         <a href="#how"
+           class="bg-blue-600 hover:bg-pink-500 transition text-white font-semibold px-6 py-3 rounded-full shadow-lg">
+          Learn How It Works
+        </a>
+        <a href="#projects"
+           class="bg-white hover:bg-blue-100 transition text-blue-700 font-semibold px-6 py-3 rounded-full shadow-lg">
+          Explore Projects
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY MY HAPPY PLACE -->
+  <section class="bg-blue-50 py-16">
+    <div class="max-w-4xl mx-auto px-6 space-y-8 text-gray-800">
+      <h2 class="text-3xl font-bold text-center text-blue-700">Why My Happy Place?</h2>
+      <p class="text-lg text-center">
+        Botswana stands at an economic crossroads, moving boldly beyond its diamond-dependent past toward a diversified, inclusive future. 
+        MHP empowers every citizen to be a driver of this transformation, helping to create jobs, build local industries, and shape a thriving, resilient economy.
+      </p>
+      <p class="text-center text-gray-700 font-medium">
+        We offer best-practice benchmarks to support projects to attain BETP flagship project status by applying scientifically based approaches and computational frameworks for objective guidance.
+      </p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="bg-white py-16">
+    <div class="max-w-5xl mx-auto px-6 text-center space-y-8">
+      <h2 class="text-3xl font-bold text-blue-700">How It Works</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="font-semibold text-lg text-gray-800 mb-2">Discover</h3>
+          <p>Explore a digital map showcasing BETP flagship and non-BETP projects across Botswana.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg text-gray-800 mb-2">Engage</h3>
+          <p>Join community dialogues, share ideas, and support projects meaningful to you.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg text-gray-800 mb-2">Earn Rewards</h3>
+          <p>Participate in token-based incentives that recognize and reward your contributions.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg text-gray-800 mb-2">Track Progress</h3>
+          <p>Follow Botswana’s economic transformation progress in real-time through an intuitive dashboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section id="projects" class="bg-blue-50 py-16">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-blue-700 mb-8">Featured Projects</h2>
+      <p class="text-gray-700">
+        Learn about high-impact flagship projects in sectors like agriculture, manufacturing, tourism, and energy that are creating new opportunities for citizens nationwide.
+      </p>
+    </div>
+  </section>
+
+  <!-- SUCCESS STORIES -->
+  <section id="stories" class="bg-white py-16">
+    <div class="max-w-5xl mx-auto px-6 text-center space-y-6">
+      <h2 class="text-3xl font-bold text-blue-700">Success Stories</h2>
+      <p class="text-gray-700">Hear directly from community members and entrepreneurs whose lives and livelihoods have been transformed through MHP initiatives and BETP projects.</p>
+    </div>
+  </section>
+
+  <!-- STAY INFORMED -->
+  <section class="bg-blue-100 py-12 text-center">
+    <div class="max-w-3xl mx-auto px-6 space-y-6">
+      <h2 class="text-2xl font-bold text-blue-700">Stay Informed and Connected</h2>
+      <p>Join workshops, events, and consultations designed to deepen citizen engagement. Subscribe for updates and new opportunities to participate.</p>
+      <form class="flex flex-col md:flex-row justify-center items-center gap-3">
+        <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-lg border border-gray-300 w-64"/>
+        <button class="bg-blue-600 hover:bg-pink-500 text-white px-6 py-2 rounded-lg font-semibold">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+<section id="qr-engagement" class="bg-gray-50 py-10 px-6 text-center">
+  <h2 class="text-2xl font-bold text-gray-800 mb-4">
+    Contribute to Botswana’s Transformation
+  </h2>
+  <p class="text-gray-600 max-w-2xl mx-auto mb-6">
+    Scan the QR code below to share your project updates, upload progress photos,
+    or submit community stories directly to the My Happy Place platform.
+    Every contribution counts toward Botswana’s Economic Transformation goals.
+  </p>
+
+  <div class="flex flex-col items-center space-y-4">
+    <img
+      src="qr-code.png"
+      alt="My Happy Place QR Code"
+      class="w-40 h-40 border-4 border-blue-600 rounded-lg shadow-md"
+    />
+    <p class="text-sm text-gray-500">
+      Point your camera or QR scanner to upload your contribution instantly.
+    </p>
+    <a
+      href="https://myhappyplace.bw/submit"
+      class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow transition"
+    >
+      Submit Online Instead
+    </a>
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-white py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+      <h2 class="text-3xl font-bold text-blue-700">Contact Us</h2>
+      <p>Have questions or need support? Reach out to our team: we’re here to help you make a difference.</p>
+      <a href="mailto:info@myhappyplace.co.bw" class="text-blue-600 font-semibold hover:underline">info@myhappyplace.co.bw</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-200 text-gray-700 py-8 text-sm">
+    <div class="max-w-5xl mx-auto px-6 text-center space-y-2">
+      <p>© 2025 My Happy Place | Botswana Entrepreneurial Transformation Program</p>
+      <div class="space-x-4">
+        <a href="privacy.html" class="hover:underline">Privacy Policy</a>|
+        <a href="terms.html" class="hover:underline">Terms of Use</a>|
+        <a href="disclaimer.html" class="hover:underline">Disclaimer</a>
+      </div>
+      <p class="text-xs text-gray-600">
+        Token rewards are incentive-based and subject to specific participation conditions.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
